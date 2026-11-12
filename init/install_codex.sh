@@ -13,6 +13,13 @@ REPO_SCRIPTS_DIR="${REPO_ROOT_DIR}/scripts"
 # Install packages
 PACKAGES=""
 
+# Fix 
+# - Error: curl: (77) error adding trust anchors from file: /etc/ssl/certs/ca-certificates.crt
+PACKAGES="
+${PACKAGES}
+ca-certificates
+"
+
 PACKAGES="
 ${PACKAGES}
 curl
