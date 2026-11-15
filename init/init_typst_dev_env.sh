@@ -55,7 +55,7 @@ mkdir -p "${INSTALL_PATH}"
 
 # ==================================================
 # SCRIPT_DIR
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd -P)
 
 # ==================================================
 # Configuration
