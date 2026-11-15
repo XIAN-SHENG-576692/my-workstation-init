@@ -47,6 +47,7 @@ psmisc
 sudo
 tree
 unzip
+utbutils
 util-linux
 util-linux-extra
 zip
